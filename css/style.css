@@ -9,6 +9,7 @@
     --light-black: rgba(20, 25, 34, 1);
     --lighter-black: rgba(40, 40, 40, 1);
     --gray-text: rgba(111, 111, 111, 1);
+    --user-bg: rgba(128, 128, 128, 1);
 }
 
 /* #region Utility Classes */
@@ -80,7 +81,7 @@ body{
 }
 
 .nav-playlist ul>li{
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
 }
 
 .nav-footer{
@@ -90,6 +91,29 @@ body{
     justify-content: flex-end;
 }
 
+.user{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.user>div{
+    background-color: var(--user-bg);
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+    background-image: url(../img/profile.svg);
+    background-position: 50% bottom;
+    margin: 0.5rem 0.8rem 0.5rem 0px;
+}
+
+.install-app{
+    margin-bottom: 0.5rem;
+    color: var(--gray-text);
+}
 
 
 /* #endregion */
