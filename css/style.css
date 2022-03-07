@@ -36,7 +36,25 @@ body{
 #site_header{
     grid-area: head;
     background-color: var(--dark-black);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
 }
+
+.upgrade{
+    color: white;
+    border: 1px solid white;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: ease 0.2s;
+}
+
+.upgrade:hover{
+    transform: scale(1.1);
+}
+
 /* #endregion */
 
 
@@ -156,6 +174,17 @@ body{
     opacity: unset;
 }
 
+.install-app:hover{
+    color: white;
+}
+
+.install-app:hover >span>i{
+    border: 1px solid white;
+}
+
+.user:hover >span{
+    border-bottom: 1px solid white;
+}
 /* #endregion */
 
 
