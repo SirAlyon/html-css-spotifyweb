@@ -1,6 +1,22 @@
+/* Common */
+
 *{
     margin: 0;padding: 0;box-sizing: border-box;
 }
+
+:root{
+    --dark-black: rgba(8, 11, 18, 1);
+    --light-black: rgba(20, 25, 34, 1);
+    --lighter-black: rgba(40, 40, 40, 1);
+    --gray-text: rgba(111, 111, 111, 1);
+}
+
+/* #region Utility Classes */
+    .m-y-1{
+        margin-top: 1rem;
+    }
+/* #endregion */
+/* Grid Layout */
 
 body{
     height: 100vh;
@@ -12,22 +28,86 @@ body{
     grid-template-columns: 230px 1fr;
 }
 
+
+/* #region Site_Header */
 #site_header{
     grid-area: head;
-    background-color: rgba(20, 25, 34, 1);
+    background-color: var(--dark-black);
 }
+/* #endregion */
 
+
+
+/* #region Site_Nav */
 #site_nav{
     grid-area: nav;
-    background-color: black;
+    background-color: rgb(255, 89, 89);
+    padding-left: 1.5rem;
+    padding-top: 1rem;
 }
 
+#site_nav ul,
+#site_nav a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--gray-text);
+}
+
+.nav-header{
+    height: 50%;
+}
+
+.nav-logo>img{
+    height: 45px;
+}
+
+.nav-menu img{
+    height: 20px;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    
+}
+
+#playlist>a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+#playlist{
+    margin-top: 1rem;
+}
+
+.nav-playlist ul>li{
+    margin-top: 0.5rem;
+}
+
+.nav-footer{
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+
+
+/* #endregion */
+
+
+
+/* #region Site_Main */
 #site_main{
     grid-area: main;
-    background-color: red;
+    background-color: yellow;
 }
+/* #endregion */
 
+
+
+/* #region Site_Footer */
 #site_footer{
     grid-area: foot;
-    background-color: green;
+    background-color: var(--lighter-black);
 }
+/* #endregion */
