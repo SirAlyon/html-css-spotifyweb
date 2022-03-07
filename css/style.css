@@ -27,6 +27,12 @@
     margin: 0 1rem;
 }
 
+.clerfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .music-bar-70{
     width: 70%;
     margin: 0 2rem;
@@ -44,19 +50,22 @@
 
 body{
     height: 100vh;
-    display: grid;
+    /* display: grid;
     grid-template-areas: "nav head"
                        "nav  main"
                        "foot  foot";
     grid-template-rows:  90px 1fr 90px;
-    grid-template-columns: 15% 1fr;
+    grid-template-columns: 15% 1fr; */
     font-family: 'Roboto', sans-serif;
 }
 
 
 /* #region Site_Header */
 #site_header{
-    grid-area: head;
+    /* grid-area: head; */
+    float: left;
+    width: 85%;
+    height: 90px;
     background-color: var(--dark-black);
     display: flex;
     justify-content: flex-end;
@@ -83,7 +92,10 @@ body{
 
 /* #region Site_Nav */
 #site_nav{
-    grid-area: nav;
+    /* grid-area: nav; */
+    width: 15%;
+    height: calc(100vh - 90px);
+    float: left;
     background-color: var(--dark-black);
     padding-left: 1.5rem;
     padding-top: 1rem;
@@ -128,8 +140,6 @@ body{
 
 .add-playlist{
     display: inline-block;
-    /* width: 20px;
-    height: 20px; */
     padding: 8px 12px;
     background-color: var(--gray-btn);
     color: black;
@@ -210,13 +220,17 @@ body{
 /* #endregion */
 
 
-
 /* #region Site_Main */
 #site_main{
-    grid-area: main;
+    /* grid-area: main; */
+    width: 85%;
+    height: calc(100% - 180px);
+    float: left;
     background-color: var(--light-black);
     color: white;
-    overflow: scroll;
+    overflow-x: scroll;
+    scrollbar-color: var(--lighter-black);
+    scrollbar-width: thin;
     padding-left: 2rem;
 }
 
@@ -268,7 +282,10 @@ body{
 
 /* #region Site_Footer */
 #site_footer{
-    grid-area: foot;
+    /* grid-area: foot; */
+    float: left;
+    width: 100%;
+    height: 90px;
     background-color: var(--lighter-black);
     display: flex;
 }
