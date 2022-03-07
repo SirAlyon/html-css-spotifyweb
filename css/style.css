@@ -1,0 +1,33 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav head"
+                       "nav  main"
+                       "foot  foot";
+    grid-template-rows:  90px 1fr 90px;
+    grid-template-columns: 230px 1fr;
+}
+
+#site_header{
+    grid-area: head;
+    background-color: rgba(20, 25, 34, 1);
+}
+
+#site_nav{
+    grid-area: nav;
+    background-color: black;
+}
+
+#site_main{
+    grid-area: main;
+    background-color: red;
+}
+
+#site_footer{
+    grid-area: foot;
+    background-color: green;
+}
