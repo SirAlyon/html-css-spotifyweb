@@ -24,8 +24,9 @@
                 <ul>
                     <li class="m-y-2">
                         <a href="#">
-                            <img src="./img/home.svg" alt="">
-                            <span>Home</span> 
+                            <img id="opacity-full" src="./img/home.svg" alt="">
+                            <span class="color-white">Home</span> 
+                            <div class="nav-menu-active"></div>
                         </a>
                     </li>
                     <li class="m-y-1">
@@ -44,10 +45,11 @@
             </div>
 
             <div class="nav-playlist">
+                <div id="playlist">
+                    <a href="#">Playlist</a>
+                </div>
+                
                 <ul>
-                    <li id="playlist"><a href="#">
-                        Playlist
-                    </a></li>
                     <li><a href="#">
                         <span class="add-playlist"><i class="fa-solid fa-plus"></i></span>
                         Crea Playlist
@@ -73,11 +75,10 @@
                     <li><a href="#">
                         Nome Playlist
                     </a></li>
+                    
                 </ul>
             </div> 
-        </div>
-        
-
+        </div>      
         <div class="nav-footer">
             <div class="install-app">
                <span><i class="fa-solid fa-arrow-down fa-2xs"></i></span> 
@@ -104,12 +105,25 @@
     <main id="site_main">
         <div class="main-menu">
             <ul>
-                <li><a href="#">In evidenza</a></li>
-                <li><a href="#">podcast</a></li>
-                <li><a href="#">classifiche</a></li>
-                <li><a href="#">generi e mood</a></li>
-                <li><a href="#">nuove uscite</a></li>
-                <li><a href="#">scopri</a></li>
+                <li class="p-relative">
+                    <a href="#">In evidenza</a>
+                    <div class="main-menu-active"></div>
+                </li>
+                <li>
+                    <a href="#">podcast</a>
+                </li>
+                <li>
+                    <a href="#">classifiche</a>
+                </li>
+                <li>
+                    <a href="#">generi e mood</a>
+                </li>
+                <li>
+                    <a href="#">nuove uscite</a>
+                </li>
+                <li>
+                    <a href="#">scopri</a>
+                </li>
             </ul>
         </div>
         <div class="m-y-2">

@@ -4,6 +4,25 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--gray-text);
+    border-radius: 20px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--gray-text);
+    border-radius: 20px;
+    border: 1px solid var(--dark-black);
+  }
+
+body{
+    user-select: none;
+}
+
 :root{
     --dark-black: rgba(8, 11, 18, 1);
     --light-black: rgba(20, 25, 34, 1);
@@ -121,6 +140,9 @@ body{
     padding-left: 1.5rem;
     padding-top: 1rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #site_nav ul,
@@ -131,7 +153,9 @@ body{
 }
 
 .nav-header{
-    height: 70%;
+    height: calc(100% - 80px);
+    min-height: 500px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -164,7 +188,7 @@ body{
 }
 
 .nav-playlist>ul{
-    height: 90%;
+    height: 70%;
     overflow-y: auto;
     scrollbar-color: var(--lighter-black);
     scrollbar-width: thin;
@@ -183,12 +207,10 @@ body{
 }
 
 .nav-footer{
-    height: 30%;
+    height: 80px;
     display: flex;
     flex-flow: column;
-    justify-content: flex-end;
-    order: -1;
-    
+    justify-content: flex-end;    
 }
 
 .user{
@@ -216,7 +238,6 @@ body{
 }
 
 .install-app>span:nth-child(1){
-    
     margin-right: 0.5rem;
 }
 
@@ -237,6 +258,7 @@ body{
     background-color: black;
 }
 
+
 #site_nav a:hover{
     color: white;
 }
@@ -247,6 +269,7 @@ body{
 
 .install-app:hover{
     color: white;
+    cursor: pointer;
 }
 
 .install-app:hover >span>i{
@@ -255,6 +278,7 @@ body{
 
 .user:hover >span{
     border-bottom: 1px solid white;
+    cursor: pointer;
 }
 
 .nav-menu-active{
@@ -276,11 +300,13 @@ body{
     float: left;
     background-color: var(--light-black);
     color: white;
-    overflow-x: scroll;
+    overflow-y: scroll;
     scrollbar-color: var(--lighter-black);
     scrollbar-width: thin;
     padding-left: 2rem;
 }
+
+
 
 .main-menu>ul,
 .main-menu a{
@@ -403,6 +429,7 @@ body{
 .left>div>span:nth-child(2):hover,
 .left>div>i:hover{
     color: white;
+    cursor: pointer;
 }
 
 .center{
@@ -423,6 +450,9 @@ body{
     transform: scale(1.1);
 }
 
+#site_footer i:hover{
+    cursor: pointer;
+}
 
 .music-bar{
     height: 50%;
