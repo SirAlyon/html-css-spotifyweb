@@ -865,25 +865,21 @@ body{
 
 
   #yoda{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 1000px;
-      height: auto;
-      opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: auto;
+    opacity: 0;
   }
 
   #yoda{
-      
-      animation-duration: 2s;
-      animation-iteration-count:1;
-      transform-origin: center;
-    animation-name: fadeOutLeftBig;
-    animation-timing-function:   ease-in;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-name: fadeOutUpBig;
+    animation-timing-function: linear;
 }
-
-  }
 
 
   @keyframes fadeOutDownBig {
@@ -897,18 +893,19 @@ body{
     }
   }
 
-  @keyframes fadeOutLeftBig {
+  @keyframes fadeOutUpBig {
     from {
       opacity: 1;
     }
   
     to {
       opacity: 0;
-      transform: translate3d(-2000px, 0, 0);
+      transform: translate3d(0, -2000px, 0);
     }
   }
   
-  .fadeOutLeftBig {
-    animation-name: fadeOutLeftBig;
+  .fadeOutUpBig {
+    animation-name: fadeOutUpBig;
   }
+
 /* #endregion */
