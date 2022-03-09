@@ -9,7 +9,7 @@
   }
   
   *::-webkit-scrollbar-track {
-    background: var(--gray-text);
+    background:transparent;
     border-radius: 20px;
   }
   
@@ -137,7 +137,6 @@ body{
     height: calc(100vh - 90px);
     float: left;
     background-color: var(--dark-black);
-    padding-left: 1.5rem;
     padding-top: 1rem;
     overflow: hidden;
     display: flex;
@@ -156,7 +155,8 @@ body{
     height: calc(100% - 80px);
     min-height: 500px;
     overflow: hidden;
-    position: relative;
+    padding-left: 1.5rem;
+
 }
 
 .nav-logo>img{
@@ -211,6 +211,7 @@ body{
     display: flex;
     flex-flow: column;
     justify-content: flex-end;    
+    padding-left: 1.5rem;
 }
 
 .user{
@@ -287,7 +288,7 @@ body{
     height: 40px;
     background-color: var(--active);
     left: -24px;
-    top: 75px;
+    top: -5px;
 }
 /* #endregion */
 
@@ -447,11 +448,16 @@ body{
 }
 
 .icons>.fa-circle-play:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #site_footer i:hover{
     cursor: pointer;
+}
+
+.center i:hover,
+.right i:hover{
+    color: var(--active);
 }
 
 .music-bar{
@@ -577,6 +583,7 @@ body{
 }
 
 @media screen and (max-width: 690px) {
+
     #site_nav{
         width: 50px;
         padding: 0;
@@ -588,6 +595,11 @@ body{
 
     #site_header{
         width: calc(100% - 50px);
+    }
+
+    .nav-header,
+    .nav-footer{
+        padding: 0;
     }
 
     .nav-menu span{
@@ -632,6 +644,11 @@ body{
     .nav-logo{
         display: flex;
         justify-content: center;
+    }
+
+    .nav-menu-active{
+        top: 27px;
+        left: 0;
     }
 }
 
@@ -683,6 +700,7 @@ body{
 
     #site_header{
         justify-content: center;
+        padding: 0;
     }
 }
 
@@ -712,4 +730,37 @@ body{
         row-gap: 1rem;
     }
 
+    #site_header{
+        padding: 0;
+    }
+
+    .upgrade{
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 324px){
+    #site_header{
+        padding: 0;
+    }
+
+    .upgrade{
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    #site_main h2{
+        font-size: 1.5rem;
+    }
+
+    .icons i:first-child,
+    .icons i:last-child{
+        display: none;
+    }
+
+    .icons{
+        column-gap: 1rem;
+    }
 }
