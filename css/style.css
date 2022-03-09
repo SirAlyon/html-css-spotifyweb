@@ -767,3 +767,17 @@ body{
         column-gap: 1rem;
     }
 }
+
+@media screen and (max-height: 400px){
+    #site_header{
+        display: none;
+    }
+
+    #site_main{
+        height: calc(100% - 90px);
+    }
+}
+
+#yoda{
+    display: none;
+}
