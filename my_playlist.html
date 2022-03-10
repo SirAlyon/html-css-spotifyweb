@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style-bonus.css">
+    <link rel="stylesheet" href="./css/my_playlist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body class="clerfix p-relative">
@@ -97,143 +97,120 @@
             </div>
         </div>
     </nav>
-
-    <!-- Start Header (call to action) -->
-    <header id="site_header">
-        <div class="upgrade">
-            Effettua l'upgrade
-        </div>
-    </header>
-    <!-- /#site_header -->
-
     
     <!-- Start Main -->
     <main id="site_main">
-        <!-- Start Main Menu -->
-        <div class="main-menu">
-            <ul>
-                <li class="p-relative">
-                    <a href="#">In evidenza</a>
-                    <div class="main-menu-active"></div>
-                </li>
-                <li>
-                    <a href="#">podcast</a>
-                </li>
-                <li>
-                    <a href="#">classifiche</a>
-                </li>
-                <li>
-                    <a href="#">generi e mood</a>
-                </li>
-                <li>
-                    <a href="#">nuove uscite</a>
-                </li>
-                <li>
-                    <a href="#">scopri</a>
-                </li>
-            </ul>
+        <div class="main-header">
+            <div class="actions">
+                <div class="actions-arrow">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+                <div class="call-to-action">
+                   <span class="actions-btn upgrade-style">upgrade</span> 
+                   <div class="user actions-btn user-style">
+                       <div></div>
+                       <span>Alessio_Sada</span>
+                   </div>
+                </div>
+            </div>
+
+            <div class="my-playlist">
+                <img src="./img/metal_lifting.jpg" alt="">
+                <div class="playlist-info">
+                    <span>PLAYLIST</span>
+                    <h2>My Playlist #3</h2>
+                    <span>my_playlist_name <span>&#9679; 9 songs,34 min 45 sec</span></span>
+                </div>
+            </div>
         </div>
 
-        <!-- Start Cards (albums) -->
-        <div class="m-y-2">
-            <h2>Recently played</h2>
-            <div class="cards m-y-2 scroll">
-                <div class="card">
-                    <div class="card-img">
+        <div class="main-footer">
+            <div class="play">
+                <span><i class="fa-solid fa-play"></i></span>
+                <span>&#9679; &#9679; &#9679;</i></span>
+            </div>
+
+            <table> <!-- L'utilizzo di table sembra essere una pessima idea, forse semanticamente più corretto(?) -->
+                <tr>
+                    <th>
+                        <span class="song-n">#</span>
+                        TITLE</th>
+                    <th>ALBUM</th>
+                    <th>DATE ADDED</th>
+                    <th>OROLOGIO</th>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="song-n">1</span>
                         <img src="./img/metal_lifting.jpg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title">Heavy Metal</div>
-                    <span>Subtitle</span>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./img/stranger.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title">Stranger Things, Vol. 1 (a Netflix Original Series Soungtrack)</div>
-                    <span>Kyle Dixon & Michael Stein</span>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./img/aquietplace.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title">A quiet place</div>
-                    <span>Subtitle</span>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./img/split.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title"> Split</div>
-                    <span>Subtitle</span>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./img/cure.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title">A cure for wellness</div>
-                    <span>Subtitle</span>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./img/sinister.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title">Sinister</div>
-                    <span>Subtitle</span>
-                </div>  
-            </div>
-            
+                        <div>
+                            <h4>Lorem ipsum dolor sit.</h4>
+                            <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        </div>
+                    </td>
+                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing.</td>
+                    <td>3 minutes ago </td>  
+                    <td>3:50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="song-n">2</span>
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <div>
+                            <h4>Lorem dolor sit.</h4>
+                            <span>Lorem ipsum dolor sit </span>
+                        </div>
+                    </td>
+                    <td>Lorem ipsum dolor, sit</td>
+                    <td>3 minutes ago </td>  
+                    <td>3:50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="song-n">3</span>
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <div>
+                            <h4>Lorem ipsum sit.</h4>
+                            <span>Lorem ipsum dolor sit </span>
+                        </div>
+                    </td>
+                    <td>Lorem ipsum dolor, sit amet </td>
+                    <td>3 minutes ago </td>  
+                    <td>3:50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="song-n">4</span>
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <div>
+                            <h4>Lorem ipsum .</h4>
+                            <span>Lorem ipsum dolor</span>
+                        </div>
+                    </td>
+                    <td>Lorem ipsum dolor, </td>
+                    <td>3 minutes ago </td>  
+                    <td>3:50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="song-n">5</span>
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <div>
+                            <h4>Lorem ipsum dolor</h4>
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </td>
+                    <td>Lorem ipsum dolor, sit amet consectetur.</td>
+                    <td>3 minutes ago </td>  
+                    <td>3:50</td>
+                </tr>
+                
+                
+            </table>
         </div>
 
-        <div class="m-y-2">
-            <h2>Creato per John Doe</h2>
-            <div class="cards m-y-2">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./img/radar.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title">Release Radar</div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./img/mixdaily.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title">Daily Mix 1</div>
-                </div> 
-            </div>
-            
-        </div>
 
-        <div class="m-y-2">
-            <h2>Recently played</h2>
-            <div class="cards m-y-2">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="b-radius-50" src="./img/youg.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    
-                    <div class="card-title">Lorem, ipsum.</div>
-                    <span>Subtitle</span>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img class="b-radius-50" src="./img/einaudi.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="card-title">Lorem, ipsum.</div>
-                    <span>Subtitle</span>
-                </div>  
-            </div>
-            
-        </div>
     </main>
     <!-- /#site_main -->
 
@@ -286,7 +263,7 @@
         </div>
     </footer>
     <!-- /#site_footer -->
-<img id="yoda" src="./img/Spotify-Icon-Logo.wine.svg" alt="">
+<!-- <img id="yoda" src="./img/Spotify-Icon-Logo.wine.svg" alt=""> -->
 
 
 </body>
