@@ -31,6 +31,7 @@ body{
     user-select: none;
     background-color: black;
     min-height: 500px;
+    overflow: hidden;
 }
 
 :root{
@@ -60,6 +61,10 @@ body{
 .m-xr-1{
     margin-right: 1rem;
     align-self: center;
+}
+
+.m-xl-1{
+    margin-left: 1rem;
 }
 
 .m-x-1{
@@ -276,13 +281,15 @@ body{
     width: calc(100% - 240px);
     height: calc(100% - 90px);
     float: left;
-    
+    background-image: linear-gradient(rgba(60, 64, 60, 1), black);
+
 }
 
 .main-header{
-    background-color: rgba(119, 125, 119, 1);
+    background-image: linear-gradient(rgba(119, 125, 119, 1), rgb(54, 52, 52)); 
     padding: 1rem 2rem;
-    color: white;
+    color: white;   
+    overflow: hidden;
 }
 
 .actions-arrow>span{
@@ -322,9 +329,14 @@ body{
     padding: 0px 8px;
 }
 
+.user-style>i{
+    margin-left: 10px;
+}
+
 .user>div{
     margin: 0.5rem 0.2rem 0.5rem 0;
 }
+
 .my-playlist{
     display: flex;
     column-gap: 1.5rem;
@@ -334,6 +346,7 @@ body{
 
 .my-playlist>img{
     width: 240px;
+    box-shadow: 0px 0px 20px 10px rgba(59, 59, 59, 0.466);
 }
 
 .playlist-info{
@@ -353,6 +366,7 @@ body{
 .main-footer{
     padding: 1rem 2rem;
     overflow: hidden;
+
 }
 
 .play{
@@ -379,7 +393,12 @@ body{
 }
 
 .songs-table{
-    overflow-y: scroll;
+    margin-top: 2rem;
+}
+
+.songs-table>hr{
+    margin: 1rem 0 2rem 0;
+    opacity: 0.5;
 }
 
 .row{
@@ -427,6 +446,14 @@ body{
 .song>img{
     width: 50px;
     margin-right: 1rem;
+}
+
+.like{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    color: rgba(30, 215, 96, 1);
 }
 /* #endregion */
 
